@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <script>
+
+// constructor function with parameters
+function Person (person_name, person_age, person_gender) {
+
+     this.name = person_name,
+     this.age = person_age,
+     this.gender = person_gender,
+ 
+     this.greet = function () {
+         return (`Hi ${this.name}`);
+     }
+ }
+ 
+ // create objects and pass arguments
+ const person1 = new Person("Harsh", 21, "male");
+ const person2 = new Person("Katariya", 22, "male");
+ 
+ // access properties
+ console.log(person1.name,person1.age,person1.gender); 
+ console.log(person2.name,person2.age,person2.gender); 
+ 
+    </script>
+</body>
+</html>
